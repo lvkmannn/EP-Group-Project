@@ -1,0 +1,569 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* *{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+} */
+*{
+	text-decoration: none;
+}
+/*HEADER*/
+header{
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+header .header-brand{
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin:0 auto;
+  text-align:center;
+  padding:20px 0;
+}
+
+header nav ul{ 
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header nav ul li{ 
+  /*display the link besides each other*/
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0px 16px; 
+}
+
+header nav ul li a{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+}
+		
+header .header-brand{
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 30px 0; /*top/bottom:30 right/left=0 (set to 30 because 100%(total px) - 40px(line height) then divide 2 to get center position*/
+  text-align: left;
+  line-height: 40px; /*the solid line height*/
+  padding: 0px 20px 0px 40px; /*top right bottom left(set to 40 so it didnt want the logo(aeman) touching the left  side of the browser*/
+  border-right: 3px solid #111;
+  float: left;
+	}
+
+header nav ul{
+  /*to center the whole list*/
+  display: block;
+  margin: 20px 0px 0px 5px;/*trbl, left set to 30 because want to have spacing between portfolio and the solid line*/
+  float: left;
+  width: fit-content;
+	}
+	
+header nav ul li a{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+  line-height: 60px;
+  text-transform: uppercase;	
+	}
+	
+	
+body{
+	font-family: 'Poppins', sans-serif; 
+}
+main{
+	width: 80%;
+	height: 95vh;
+	/*border: 1px solid #000;*/
+	margin:  auto;
+}
+main nav{
+	width: 100%;
+	height: 7%;
+	/*border: 1px solid #000;*/
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+main nav ul{
+	list-style: none;
+	display: flex;
+}
+main nav ul li{
+	padding: 3px 15px;
+}
+main nav ul li:nth-last-child(1){
+	background: #000;
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+main nav ul li:nth-last-child(1) a{
+	color: #fff;
+}
+main nav ul li a{
+	text-decoration: none;
+	color: #121213;
+	font-size: 13px;
+	font-weight: 500;
+	transition: .3s linear;
+}
+main nav ul li a:hover{
+	color: gray;	
+}
+main nav .bi-three-dots{
+	/*display: none;*/
+}
+main .content{
+	position: relative;
+	width: 100%;
+	height: 93%;
+	/*border: 1px solid #000;*/
+}
+main .content::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	/*border: 1px solid #000;*/
+	background: url('media/ViewPackages/background.jpg')no-repeat center center/cover;
+	border-radius: 10px;
+	z-index: -1; 
+}
+main .content .cont_bx{
+	width: 500px;
+	height: auto;
+	color: #000;
+	padding: 30px;
+}
+main .content .cont_bx h1{ 
+	line-height: 40px;
+	font-weight: 800;
+	/*border: 1px solid #000;*/
+}
+main .content .cont_bx p{
+	font-size: 14px;
+	font-weight: 400;
+	color: black;
+}
+main .content .cont_bx button{
+	margin-top: 20px;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: 2px solid #000;
+	background: #000;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	transition: .3s linear;
+}
+main .content .cont_bx button:hover{
+    background: rgb(113, 113, 113);
+    border: 2px solid rgb(113, 113, 113);
+}
+main .trip_bx{
+	position: relative;
+	width: 95%;
+	height: auto;
+	margin: auto;
+	/*border: 1px solid #000;*/
+}
+main .trip_bx .search_bx{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 10px 25px rgb(114, 114, 114);
+	z-index: 1;
+	padding: 10px 20px;
+}
+main .trip_bx .search_bx .card{
+	width: 200px;
+	height: 100%;
+	/*border: 1px solid #000;*/
+}
+main .trip_bx .search_bx .card h4{
+	font-size: 15px;
+	margin: 0;
+	font-weight: 700;
+}
+main .trip_bx .search_bx .card h4 .bi{
+	position: absolute;
+	font-size: 13px;
+	margin-left: 2px 0px 0px 5px;
+	transition: .3s linear;
+}
+main .trip_bx .search_bx .card input{
+	margin-top: 3px;
+	padding: 5px 0px;
+	border: none;
+	outline: none;
+	font-size: 13px;
+}
+main .trip_bx .search_bx input[type="button"]{
+	background: #000;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	transition: .3s linear;
+	cursor: pointer;
+}
+main .trip_bx .search_bx input[type="button"]:hover{
+	background: gray;
+}
+main .trip_bx .travel_bx{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	top: 30px;
+	/*background: #000;*/
+	/*border: 1px solid #000;*/
+	border-radius: 10px;
+	padding-bottom: 20px;
+	box-shadow: 0px 20px 25px -10px rgb(165, 165, 165);
+}
+main .trip_bx .travel_bx::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background: rgb(241, 241, 241, .7);
+	backdrop-filter: blur(5px);
+	z-index: -1;
+}
+main .trip_bx .travel_bx h4{
+	margin: 0;
+	padding: 60px 0px 15px 1.7%;
+}
+main .trip_bx .travel_bx .cards{
+	width: 96%;
+	height: auto;
+	margin: 0 auto;
+	/*border: 1px solid #000;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+main .trip_bx .travel_bx .cards .card{
+	width: 220px;
+	height: 180px;
+	/*border: 1px solid #000;*/
+}
+main .trip_bx .travel_bx .cards .card h3{
+	margin: 0px 0px 10px 0px;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 600;
+}
+main .trip_bx .travel_bx .cards .card h3 img{
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+}
+main .trip_bx .travel_bx .cards .card img{
+	width: 100%;
+	height: 50%;
+}
+main .trip_bx .travel_bx .cards .card .btn_city{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*border: 1px solid #000;*/
+}
+main .trip_bx .travel_bx .cards .card .btn_city a{
+	text-decoration: none;
+	background: #000;
+	color: #fff;
+	border-radius: 20px;
+	padding: 6px 20px;
+	font-size: 11px;
+	transition: .3s linear;
+}
+main .trip_bx .travel_bx .cards .card .btn_city a:hover{
+	background: gray;
+}
+main .trip_bx .travel_bx .cards .card .btn_city h5{
+	font-size: 11px;
+	font-weight: 500;
+	margin: 0;
+	margin-top: 5px;
+	line-height: 15px;
+}
+main .trip_bx .travel_bx .cards .card .btn_city h5 span{
+	font-size: 13px;
+	font-weight: 700;
+}
+.offers{
+	width: 60%;
+	height: auto;
+	/*border: 1px solid #000;*/
+	margin: auto;
+	margin-top: 100px;
+}
+.offers h1{
+	font-weight: 600;
+	text-align: center;
+	margin: 0;
+}
+.offers p{
+	font-weight: 500;
+	text-align: center;
+	margin: 0;
+}
+.offers .cards{
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*border: 1px solid #000;*/
+	flex-wrap: wrap;
+}
+.offers .cards .card{
+	position: relative;
+	width: 200px;
+	height: 350px;
+	/*border: 1px solid #000;*/
+	margin: 10px;
+}
+.offers .cards .card h3{
+	width: 140px;
+	padding: 6px 0px;
+	background: rgb(165, 243, 165);
+	border-radius: 20px;
+	font-size: 12px;
+	display: grid;
+	place-items: center;
+	margin: auto;
+}
+.offers .cards .card .img_text{
+	position: relative;
+	width: 100%;
+	height: 250px;
+	margin-top: 5px;
+}
+.offers .cards .card .img_text img{
+	position: relative;
+	width: 100%;
+	height: 170px;
+	border-radius: 10px 10px 0px 0px;
+}
+.offers .cards .card .img_text h4{
+	position: absolute;
+	font-size: 9px;
+	padding: 10px 15px;
+	bottom: 0;
+	margin: 0;
+	color: #000;
+	z-index: 2;
+}
+.offers .cards .card .img_text h4::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgb(255, 255, 255 .1);
+	backdrop-filter: blur(5px);
+	z-index: -1;
+	bottom: 0;
+	left: 0;
+}
+.offers .cards .card .cont_bx{
+	width: 99%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid rgb(182, 182, 182);
+	padding: 5px 0px;
+	border-radius: 0px 0px 5px 5px;
+}
+.offers .cards .card .cont_bx .price , .days{
+	margin: 0px 5px;
+}
+.offers .cards .card .cont_bx .price .heart_chat{
+	display: flex;
+	align-items: center;
+}
+.offers .cards .card .cont_bx .price .heart_chat i:nth-child(1){
+	color: red;
+	font-size: 13px;
+	margin-right: 10px;
+}
+.offers .cards .card .cont_bx .price .heart_chat i span{
+	color: #000;
+	font-size: 12px;
+	margin-right: 3px;
+	font-style: normal;
+}
+.offers .cards .card .cont_bx .price .heart_chat i:nth-child(2){
+	color: rgb(112, 196, 229);
+	font-size: 13px;
+	margin-right: 10px;
+}
+.offers .cards .card .cont_bx .price .info_price{
+	display: flex;
+	align-items: center;
+	margin-top: 3px;
+}
+.offers .cards .card .cont_bx .price .info_price a{
+	text-decoration: none;
+	color: #000;
+	font-size: 11px;
+	font-weight: 700;
+	transition: .3s linear;
+	margin-right: 13px;
+}
+.offers .cards .card .cont_bx .price .info_price a:hover{
+	color: gray;
+}
+.offers .cards .card .cont_bx .price .info_price h4{
+	margin: 0;
+	font-size: 13px;
+}
+.offers .cards .card .cont_bx .days{
+	color: #fff;
+	background: #000;
+	font-size: 8px;
+	border-radius: 50%;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	transition: .3s linear;
+}
+.offers .cards .card .cont_bx .days:hover{
+	transform: rotate(360deg);
+}
+
+.destination{
+	width: 45%;
+	height: auto;
+	border: 1px solid #000;
+	margin: auto;
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.destination .des_bx , .img_bx{
+	position: relative;
+	width: 50%;
+	height: auto;
+	border: 1px solid #000;
+}
+
+
+
+
+/*media query for header & main(index)*/
+@media only screen and (min-width: 1000px) {
+		
+.wrapper{
+	width:1000px;
+	margin: 0 auto;	
+}
+.index-banner{
+  height: 400px;
+}
+
+.index-banner h1{
+  display: block;
+  width: 550px;
+  margin:0 auto;
+}
+
+
+header .header-brand{
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 30px 0; /*top/bottom:30 right/left=0 (set to 30 because 100%(total px) - 40px(line height) then divide 2 to get center position*/
+  text-align: left;
+  line-height: 40px; /*the solid line height*/
+  padding: 0px 20px 0px 40px; /*top right bottom left(set to 40 so it didnt want the logo(aeman) touching the left  side of the browser*/
+  border-right: 3px solid #111;
+  float: left;
+	}
+
+header .header-proj{
+  display: block;
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+  text-transform: uppercase;
+  line-height: 38px;
+  border: 1px solid #111; /*the solid line*/
+  float: right;
+  margin-right: 40px;
+  margin-top: 30px;
+  padding: 0 20px; /*0-(top/bottom) 20-(left/right)*/
+	}
+
+footer ul li a{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: white;
+  line-height: 40px;
+	}
+
+
+header nav ul{
+  /*to center the whole list*/
+  display: block;
+  margin: 20px 0px 0px 30px;/*trbl, left set to 30 because want to have spacing between portfolio and the solid line*/
+  float: left;
+  width: fit-content;
+	}
+	
+header nav ul li a{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+  line-height: 60px;
+  text-transform: uppercase;	
+	}
+	
+.index-boxlinks div{
+	margin: 20px 10px 0;
+	height: 230px;
+	float: left;
+	}
+	
+.index-boxlinks div h3{
+  line-height: 230px; /*because the box(.index-boxlinks div) height is 100px*/
+	}
+	
+.index-boxlink-square{
+	width: calc(25% - 20px) !important; /*!important - to ignore all the style that comes to the width(override)*/ 
+	}
+	
+.index-boxlink-rectangle{
+	width: calc(50% - 20px) !important; /*!important - to ignore all the style that comes to the width(override)*/ 
+	}
+	
+.index-boxlinks {
+	overflow: hidden;
+	}
+	}

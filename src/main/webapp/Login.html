@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LOGIN</title>
+<link rel="stylesheet" href="css/LoginStyle.css">
+</head>
+<body>
+	<div class="login-box">
+  <p>Login</p>
+  <form>
+    <div class="user-box">
+      <input required="" name="custusername" type="text">
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input required="" name="custpassword" type="password">
+      <label>Password</label>
+    </div>
+     <a href="#" onclick="submitForm()"> <!-- Added onclick attribute -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  </form>
+  <p>Don't have an account? <a href="addCust.jsp" class="a2">Sign up!</a></p>
+</div>
+</body>
+<script>
+function submitForm() {
+  // Get the form element
+  var form = document.querySelector('form');
+
+  // Set the form action to the desired page (e.g., "LoginUserServlet") and submit the form
+  form.action = 'LoginUserServlet';
+  form.method = 'post';
+  form.submit();
+}
+</script>
+</html>

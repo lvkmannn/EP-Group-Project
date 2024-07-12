@@ -1,0 +1,428 @@
+@charset "UTF-8";
+        
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+/*MY CODE*/
+*{
+  text-decoration: none;
+}
+
+/*default paragparh(word)*/
+p{
+  color: #111;
+}
+
+body{
+  background-color: #f3f3f3;
+}
+
+main{
+  padding-top: 100px; /*so the main content is always below header(no double layer)*/
+}
+
+/*HEADER*/
+header{
+  position: fixed; /*line 1, to make the header stays (line 1 to line 4),even when scrolling down*/
+  top: 0px; /*line 2*/
+  right: 0px; /*line 3*/
+  left: 0px; /*line 4*/
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+header .header-brand{
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin:0 auto;
+  text-align:center;
+  padding:20px 0;
+}
+
+header nav ul{ 
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#login{
+  padding-left: 500px;
+}
+
+header nav ul li{ 
+  /*display the link besides each other*/
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0px 16px; 
+}
+
+header nav ul li a{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+}
+
+header .header-proj{
+  display : none;
+}
+
+/*MAIN*/
+.index-banner{
+  width: 100%;
+  height: calc(100vh-100px);
+  background-image: url('media/backgroundImage.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /*cover entire banner*/
+  display: table;
+}
+
+.vertical-center{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.index-banner h2{
+  font-family: Catamaran;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 5px 5px 8px #111; /*text-shadow: ke kiri, ke bawah, text blur*/
+}
+
+.index-banner h1{
+  font-family: Catamaran;
+  font-size: 40px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111; /*text-shadow: ke kiri, ke bawah, text blur, color*/
+  padding-top: 10px;
+}
+
+/*CONTENT*/
+.content1{
+  padding-top: 10px;
+  margin-top: 10px;
+  height: 150px;
+  background-color:lightslategrey;
+}
+.content1 p{
+  font-family: Catamaran;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 70px;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.content2{
+  padding-top: 10px;
+  margin-top: 10px;
+  height: 200px;
+  background-color: lightslategrey;
+}
+.content2 p{
+  font-family: Catamaran;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 70px;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/*FOOTER*/
+
+footer{
+width: calc(100% - 80px); /*100 - 40px(left)+40px(right)*/
+padding: 40px 40px;
+margin-top: 20px; /*spacing between footer and the last button(CONTACT)*/
+background-color:lightslategrey;
+overflow: hidden;
+}
+
+footer ul{
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+
+footer ul li{
+  display: block;
+  list-style: none;
+}
+
+footer ul li a{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: white;
+  line-height: 30px;
+}
+
+.footer-links-project {
+  display: none;
+}
+
+.footer-sm{
+  width: 50px;
+  float: right;
+}
+
+.footer-sm img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*media query for footer*/
+@media only screen and (min-width: 1000px) {
+  
+.footer-links-project{
+    display: block;
+  }
+  
+footer ul {
+  padding-right:30px; /*spacing between the menu at the bottom(footer)*/
+}
+  
+footer ul li p{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: white;
+  line-height: 40px;
+  text-transform: uppercase;
+  }
+
+}
+
+/*
+  footer{
+  width: calc(100% - 80px); 
+  margin-top: 20px;
+  padding: 40px 40px;
+  height: 125px;
+  background-color: black;
+}*/
+
+/*media query for header & main(index)*/
+@media only screen and (min-width: 1000px) {
+    
+.wrapper{
+  width:1000px;
+  margin: 0 auto;  
+}
+.index-banner{
+  height: 400px;
+}
+
+.index-banner h1{
+  display: block;
+  width: 550px;
+  margin:0 auto;
+}
+
+
+header .header-brand{
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 30px 0; /*top/bottom:30 right/left=0 (set to 30 because 100%(total px) - 40px(line height) then divide 2 to get center position*/
+  text-align: left;
+  line-height: 40px; /*the solid line height*/
+  padding: 0px 20px 0px 40px; /*top right bottom left(set to 40 so it didnt want the logo(aeman) touching the left  side of the browser*/
+  border-right: 3px solid #111;
+  float: left;
+  }
+
+header .header-proj{
+  display: block;
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+  text-transform: uppercase;
+  line-height: 38px;
+  border: 1px solid #111; /*the solid line*/
+  float: right;
+  margin-right: 40px;
+  margin-top: 30px;
+  padding: 0 20px; /*0-(top/bottom) 20-(left/right)*/
+  }
+
+footer ul li a{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: white;
+  line-height: 40px;
+  }
+
+
+header nav ul{
+  /*to center the whole list*/
+  display: block;
+  margin: 20px 0px 0px 30px;/*trbl, left set to 30 because want to have spacing between portfolio and the solid line*/
+  float: left;
+  width: fit-content;
+  }
+  
+header nav ul li a{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+  line-height: 60px;
+  text-transform: uppercase;  
+  }
+  
+.index-boxlinks div{
+  margin: 20px 10px 0;
+  height: 230px;
+  float: left;
+  }
+  
+.index-boxlinks div h3{
+  line-height: 230px; /*because the box(.index-boxlinks div) height is 100px*/
+  }
+  
+.index-boxlink-square{
+  width: calc(25% - 20px) !important; /*!important - to ignore all the style that comes to the width(override)*/ 
+  }
+  
+.index-boxlink-rectangle{
+  width: calc(50% - 20px) !important; /*!important - to ignore all the style that comes to the width(override)*/ 
+  }
+  
+.index-boxlinks {
+  overflow: hidden;
+  }
+  
+  /*BUAT SINI*/
+.box {
+  	border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 25px;
+ }
+.box-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align:center;
+    }
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/*resizing of image*/
+.gallery-img img{
+  width: 100%; /* Limit image width to container size */
+  /*height: auto; /* Maintain aspect ratio */
+ /* object-fit: cover; /* Resize images without distorting aspect ratio */
+}
+
+.footer-copyright {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  color: #888;
+  font-size: 14px;
+}
